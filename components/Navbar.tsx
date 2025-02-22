@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-[#01274F] text-white py-6 md:py-8 px-6 md:px-12 flex justify-between items-center fixed top-0 left-0 z-50 md:h-20 h-16 shadow-lg">
+    <nav className="w-full bg-[#01274F] text-white py-6 md:py-8 px-6 md:px-12 flex justify-between items-center fixed top-0 left-0 z-50 md:h-20 h-16 shadow-[0px_4px_10px_rgba(0,0,0,0.5)]">
       <a href="/" className="flex items-center space-x-1">
         <img
           src="/assets/icons/btn-logo-transparent.png"
@@ -16,7 +16,7 @@ const Navbar = () => {
           className="h-8 md:h-10"
         />
       </a>
-      <div className="flex space-x-4">
+      <div className="flex space-x-2 md:space-x-4">
         <a
           href="https://www.facebook.com/BTN9DOFC"
           target="_blank"
