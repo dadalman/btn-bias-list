@@ -16,3 +16,22 @@ const Watchlist = () => {
 };
 
 export default Watchlist;
+
+// // All trainees
+// import trainees from "@/data/trainees";
+
+// const Watchlist = () => {
+//   return (
+//     <section className="w-full flex flex-col items-center h-auto">
+//       <div className="w-full md:max-w-[90%] flex flex-wrap justify-center gap-4 md:gap-10">
+//         {trainees.map((trainee, index) => (
+//           <div key={trainee.id}>
+//             <WatchlistFrame name={trainee.name} image={trainee.image} />
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Watchlist;
