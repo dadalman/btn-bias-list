@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Modal from "./SelectionModal"; // Import the Modal component
+import SelectionModal from "./SelectionModal"; // Import the Modal component
 
 interface TopRankFrameProps {
   id: number;
@@ -41,12 +41,11 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
       </div>
 
       {/* Modal Component */}
-      <Modal
+      <SelectionModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title={name}
-        image={image}
-        rank={rank}
+        listType="top"
+        id={id}
       />
     </>
   );

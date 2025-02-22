@@ -11,6 +11,7 @@ const BiasList = () => {
               name={bias.name}
               rank={bias.rank}
               image={bias.image}
+              id={bias.id}
             />
           </div>
         ))}

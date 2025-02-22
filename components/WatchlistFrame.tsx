@@ -1,14 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import Modal from "./SelectionModal"; // Import Modal component
+import SelectionModal from "./SelectionModal"; // Import Modal component
 
 interface WatchlistFrameProps {
+  id: number;
   name: string;
   image: string;
 }
 
-const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image }) => {
+const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image, id }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -31,12 +32,11 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image }) => {
       </div>
 
       {/* Modal Component */}
-      <Modal
+      <SelectionModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title={name}
-        image={image}
-        rank={0}
+        listType="watchlist"
+        id={id}
       />
     </>
   );

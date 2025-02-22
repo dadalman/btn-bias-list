@@ -6,17 +6,15 @@ import TraineesProfile from "./TraineesProfile";
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  title: string;
-  image: string;
-  rank: number;
+  listType: string;
+  id: number;
 }
 
 const SelectionModal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
-  title,
-  image,
-  rank,
+  listType,
+  id,
 }) => {
   const [search, setSearch] = useState("");
 
