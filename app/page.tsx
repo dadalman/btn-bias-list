@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import BiasList from "@/components/BiasList";
 import Watchlist from "@/components/Watchlist";
 import { FaSave } from "react-icons/fa";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
