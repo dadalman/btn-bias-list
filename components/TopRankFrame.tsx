@@ -32,7 +32,7 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
           <img
             src={image}
             alt={name}
-            className="w-[75px] h-[75px] md:w-28 md:h-28 rounded-full object-cover"
+            className="w-[75px] h-[75px] md:w-28 md:h-28 rounded-full object-cover object-top"
           />
         </button>
 
@@ -44,8 +44,7 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
       <SelectionModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        listType="top"
-        id={id}
+        rank={rank}
       />
     </>
   );

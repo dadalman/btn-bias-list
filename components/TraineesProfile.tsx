@@ -12,9 +12,9 @@ const TraineesProfile: React.FC<TraineesProfileProps> = ({ name, image }) => {
         <Image
           src={image}
           alt={name}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="top"
+          fill
+          className="object-cover object-top"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </button>
 

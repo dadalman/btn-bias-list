@@ -7,9 +7,14 @@ interface WatchlistFrameProps {
   id: number;
   name: string;
   image: string;
+  rank: number;
 }
 
-const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image, id }) => {
+const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
+  name,
+  image,
+  rank,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -18,7 +23,7 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image, id }) => {
         {/* Clickable Circle - Opens Modal */}
         <button
           className="w-[65px] h-[65px] md:w-[100px] md:h-[100px] bg-[#92D0F3] rounded-full flex items-center justify-center shadow-lg mb-2"
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => setIsModalOpen(true)} // ✅ Ensures modal opens correctly
         >
           <img
             src={image}
@@ -32,12 +37,13 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({ name, image, id }) => {
       </div>
 
       {/* Modal Component */}
-      <SelectionModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        listType="watchlist"
-        id={id}
-      />
+      {isModalOpen && (
+        <SelectionModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          rank={rank}
+        />
+      )}
     </>
   );
 };
