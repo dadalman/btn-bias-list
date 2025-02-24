@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SelectionModal from "./SelectionModal"; // Import Modal component
+import Image from "next/image";
 
 interface WatchlistFrameProps {
   id: number;
@@ -25,10 +26,12 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
           className="w-[65px] h-[65px] md:w-[100px] md:h-[100px] bg-[#92D0F3] rounded-full flex items-center justify-center shadow-lg mb-2"
           onClick={() => setIsModalOpen(true)} // ✅ Ensures modal opens correctly
         >
-          <img
+          <Image
             src={image}
             alt={name}
-            className="w-[57px] h-[57px] md:w-[90px] md:h-[90px] rounded-full object-cover object-top"
+            width={90} // Set the largest width from your responsive design
+            height={90} // Set the largest height from your responsive design
+            className="rounded-full object-cover object-top w-[57px] h-[57px] md:w-[90px] md:h-[90px]"
           />
         </button>
 
