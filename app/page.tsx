@@ -55,7 +55,7 @@ export default function Home() {
             alt="Bias List"
             width={128}
             height={128}
-            className="mb-4 mt-5"
+            className="mb-4 mt-1"
           />
 
           <h2 className="font-markazi font-bold text-[28px] md:text-[40px] text-[#F4FAFE] -mt-6">
@@ -70,7 +70,7 @@ export default function Home() {
             alt="Star Divider"
             width={500}
             height={20}
-            className="my-4"
+            className="md:mt-4 md:mb-4 mb-2 mt-2"
           />
 
           <BiasList />
@@ -80,7 +80,7 @@ export default function Home() {
             alt="Star Divider"
             width={500}
             height={20}
-            className="mt-4 mb-10"
+            className="md:mt-4 mt-2 mb-10"
           />
 
           <h3 className="font-inter text-[18px] md:text-[24px] text-[#F4FAFE] -mt-2 md:mb-2">
@@ -92,7 +92,7 @@ export default function Home() {
             alt="Divider"
             width={500}
             height={20}
-            className="mt-4 mb-4 md:mb-10"
+            className="mt-2 mb-3 md:mb-10"
           />
 
           <Watchlist />
@@ -102,7 +102,7 @@ export default function Home() {
             alt="Divider"
             width={500}
             height={20}
-            className="mt-4 md:mt-10"
+            className="mt-2 md:mt-10"
           />
 
           {/* Footer Note - Shown only during capture */}
@@ -117,7 +117,7 @@ export default function Home() {
           <button
             ref={buttonRef}
             onClick={handleDownloadImage}
-            className="flex items-center justify-center gap-2 px-6 py-3 mt-5 md:mt-10 mb-10 border-2 border-[#F4FAFE] bg-[#002042] text-[#F4FAFE] text-lg font-semibold w-auto"
+            className="flex items-center justify-center gap-2 px-6 py-3 mt-10 mb-10 border-2 border-[#F4FAFE] bg-[#002042] text-[#F4FAFE] text-lg font-semibold w-auto"
           >
             <FaSave className="text-2xl" />
             Download Image

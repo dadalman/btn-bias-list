@@ -21,7 +21,7 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full max-w-[250px] py-1 bg-[#01274F] text-[#F4FAFE] rounded-lg">
+      <div className="flex flex-col items-center justify-center w-full max-w-[250px] md:py-1 bg-[#01274F] text-[#F4FAFE] rounded-lg">
         {/* Rank */}
         <span className="text-lg font-bold mb-2">Top {rank}</span>
 

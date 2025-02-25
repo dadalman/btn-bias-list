@@ -15,18 +15,13 @@ const Watchlist = () => {
   const [watchList, setWatchList] = useState<Trainee[]>([]);
 
   useEffect(() => {
-    console.log("Fetching Watchlist from DB");
-
     const fetchData = async () => {
       const data: Trainee[] = await getAllItems();
-      console.log("All Trainees:", data);
 
       // Filter and sort trainees with ranks 10-21
       const filteredWatchList = data
         .filter((item) => item.rank >= 10 && item.rank <= 21)
         .sort((a, b) => a.rank - b.rank);
-
-      console.log("Filtered Watchlist:", filteredWatchList);
 
       setWatchList(filteredWatchList);
     };
@@ -40,7 +35,7 @@ const Watchlist = () => {
 
   return (
     <section className="w-full flex flex-col items-center h-auto">
-      <div className="w-full md:max-w-[90%] flex flex-wrap justify-center gap-4 md:gap-10">
+      <div className="w-full max-w-[90%] flex flex-wrap justify-center gap-2 md:gap-10">
         {watchList.map((watchlist) => (
           <div key={watchlist.id}>
             <WatchlistFrame

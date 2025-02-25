@@ -15,18 +15,13 @@ const BiasList = () => {
   const [biasList, setBiasList] = useState<Trainee[]>([]);
 
   useEffect(() => {
-    console.log("Fetching Bias List from DB");
-
     const fetchData = async () => {
       const data: Trainee[] = await getAllItems();
-      console.log("All Trainees:", data);
 
       // Filter and sort trainees with ranks 1-9
       const filteredBiasList = data
         .filter((item) => item.rank >= 1 && item.rank <= 9)
         .sort((a, b) => a.rank - b.rank);
-
-      console.log("Filtered Bias List:", filteredBiasList);
 
       setBiasList(filteredBiasList);
     };
