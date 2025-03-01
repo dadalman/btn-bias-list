@@ -1,4 +1,4 @@
-const trainees = [
+const traineesTransparent = [
   {
     id: 1,
     name: "ADRIAN",
@@ -445,4 +445,4 @@ const trainees = [
   },
 ];
 
-export default trainees;
+export default traineesTransparent;

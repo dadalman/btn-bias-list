@@ -30,13 +30,16 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
           className="w-[85px] h-[85px] md:w-32 md:h-32 bg-[#92D0F3] rounded-full flex items-center justify-center shadow-lg mb-2"
           onClick={() => setIsModalOpen(true)}
         >
-          <Image
-            src={image}
-            alt={name}
-            width={112} // Equivalent to md:w-28 (28 * 4 = 112px)
-            height={112} // Equivalent to md:h-28
-            className="rounded-full object-cover object-top w-[75px] h-[75px] md:w-28 md:h-28"
-          />
+          {/* Image Wrapper with Background Color */}
+          <div className="w-[75px] h-[75px] md:w-28 md:h-28 bg-[#b8c2d5] rounded-full flex items-center justify-center overflow-hidden">
+            <Image
+              src={image}
+              alt={name}
+              width={112}
+              height={112}
+              className="rounded-full object-cover object-top w-full h-full"
+            />
+          </div>
         </button>
 
         {/* Name */}

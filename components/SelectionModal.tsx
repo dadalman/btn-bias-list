@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Search } from "lucide-react";
-import trainees from "@/data/trainees";
+import traineesTransparent from "@/data/traineesTransparent";
 import TraineesProfile from "./TraineesProfile";
 import { updateItem } from "@/utils/indexedDB"; // ✅ Ensure correct import
 
@@ -18,7 +18,7 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   if (!isOpen) return null;
 
   // Filter trainees based on search input
-  const filteredTrainees = trainees.filter((trainee) =>
+  const filteredTrainees = traineesTransparent.filter((trainee) =>
     trainee.name.toLowerCase().includes(search.toLowerCase())
   );
 
