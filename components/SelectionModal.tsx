@@ -48,11 +48,7 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
 
   // Reset trainee to default based on rank
   const handleRemoveTrainee = async () => {
-    await updateTraineeByRank(
-      rank,
-      "TRAINEE",
-      "/assets/images/blank-image.png"
-    );
+    await updateTraineeByRank(rank, "", "/assets/images/blank-image.png");
     onClose();
   };
 

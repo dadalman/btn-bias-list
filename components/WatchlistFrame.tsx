@@ -27,11 +27,11 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
           onClick={() => setIsModalOpen(true)} // ✅ Ensures modal opens correctly
         >
           <div className="w-[57px] h-[57px] md:w-[90px] md:h-[90px] bg-[#b8c2d5] rounded-full flex items-center justify-center overflow-hidden">
-            <Image
+            <img
               src={image}
               alt={name}
-              width={90} // Set the largest width from your responsive design
-              height={90} // Set the largest height from your responsive design
+              width="90"
+              height="90"
               className="rounded-full object-cover object-top w-[57px] h-[57px] md:w-[90px] md:h-[90px]"
             />
           </div>

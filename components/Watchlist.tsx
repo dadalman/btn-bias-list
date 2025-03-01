@@ -35,7 +35,7 @@ const Watchlist = () => {
 
   return (
     <section className="w-full flex flex-col items-center h-auto">
-      <div className="w-full max-w-[90%] flex flex-wrap justify-center gap-2 md:gap-10">
+      <div className="w-full max-w-[90%] flex flex-wrap justify-center gap-3 md:gap-2 lg:gap-7">
         {watchList.map((watchlist) => (
           <div key={watchlist.id}>
             <WatchlistFrame

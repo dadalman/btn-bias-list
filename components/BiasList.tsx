@@ -35,7 +35,7 @@ const BiasList = () => {
 
   return (
     <section className="w-full flex flex-col items-center h-auto">
-      <div className="w-full md:max-w-[90%] flex flex-wrap justify-center gap-4 md:gap-10">
+      <div className="w-full md:max-w-[90%] flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-10">
         {biasList.map((bias) => (
           <div key={bias.id}>
             <TopRankFrame

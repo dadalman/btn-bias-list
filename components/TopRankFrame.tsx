@@ -32,11 +32,10 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
         >
           {/* Image Wrapper with Background Color */}
           <div className="w-[75px] h-[75px] md:w-28 md:h-28 bg-[#b8c2d5] rounded-full flex items-center justify-center overflow-hidden">
-            <Image
+            <img
               src={image}
               alt={name}
-              width={112}
-              height={112}
+              loading="lazy"
               className="rounded-full object-cover object-top w-full h-full"
             />
           </div>

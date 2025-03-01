@@ -1,25 +1,31 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import html2canvas from "html2canvas";
 import { FaSave } from "react-icons/fa";
-import Navbar from "@/components/Navbar";
 import BiasList from "@/components/BiasList";
 import Watchlist from "@/components/Watchlist";
-import Footer from "@/components/Footer";
+import { MdScreenRotation } from "react-icons/md";
 
 export default function Home() {
   const captureRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null); // Ref for hiding the button
   const footerRef = useRef<HTMLDivElement>(null); // Ref for showing the footer
+  const rotateMsgRef = useRef<HTMLDivElement>(null); // Ref for hiding the rotation message
 
   const handleDownloadImage = async () => {
-    if (!captureRef.current || !buttonRef.current || !footerRef.current) return;
+    if (
+      !captureRef.current ||
+      !buttonRef.current ||
+      !footerRef.current ||
+      !rotateMsgRef.current
+    )
+      return;
 
-    // Hide the button and show the footer
+    // Hide the button, show the footer, and hide the rotate message
     buttonRef.current.style.display = "none";
     footerRef.current.style.display = "block";
+    rotateMsgRef.current.style.display = "none";
 
     // Capture the image
     const canvas = await html2canvas(captureRef.current, {
@@ -28,9 +34,10 @@ export default function Home() {
       backgroundColor: "#01274F", // Ensures background color is not transparent
     });
 
-    // Restore the button after capturing
+    // Restore the button and rotate message after capturing
     buttonRef.current.style.display = "flex";
     footerRef.current.style.display = "none";
+    rotateMsgRef.current.style.display = "flex";
 
     // Convert canvas to image and download
     const dataUrl = canvas.toDataURL("image/png");
@@ -50,11 +57,11 @@ export default function Home() {
           ref={captureRef}
           className="w-auto md:max-w-[950px] p-4 bg-[#01274F] shadow-[0px_4px_10px_rgba(0,0,0,0.5),_-0px_4px_10px_rgba(0,0,0,0.5)] flex flex-col items-center text-center"
         >
-          <Image
+          <img
             src="/assets/icons/btn-logo-transparent.png"
             alt="Bias List"
-            width={128}
-            height={128}
+            width="128"
+            height="128"
             className="mb-4 mt-1"
           />
 
@@ -65,21 +72,21 @@ export default function Home() {
             My Bias List
           </p>
 
-          <Image
+          <img
             src="/assets/images/star-divider.png"
             alt="Star Divider"
-            width={500}
-            height={20}
+            width="500"
+            height="20"
             className="md:mt-4 md:mb-4 mb-2 mt-2"
           />
 
           <BiasList />
 
-          <Image
+          <img
             src="/assets/images/star-divider.png"
             alt="Star Divider"
-            width={500}
-            height={20}
+            width="500"
+            height="20"
             className="md:mt-4 mt-2 mb-10"
           />
 
@@ -87,21 +94,21 @@ export default function Home() {
             Watchlist
           </h3>
 
-          <Image
+          <img
             src="/assets/images/divider.png"
             alt="Divider"
-            width={500}
-            height={20}
+            width="500"
+            height="20"
             className="mt-2 mb-3 md:mb-10"
           />
 
           <Watchlist />
 
-          <Image
+          <img
             src="/assets/images/divider.png"
             alt="Divider"
-            width={500}
-            height={20}
+            width="500"
+            height="20"
             className="mt-2 md:mt-10"
           />
 
@@ -114,14 +121,26 @@ export default function Home() {
           </p>
 
           {/* Button inside the div but excluded from capture */}
-          <button
-            ref={buttonRef}
-            onClick={handleDownloadImage}
-            className="flex items-center justify-center gap-2 px-6 py-3 mt-10 mb-10 border-2 border-[#F4FAFE] bg-[#002042] text-[#F4FAFE] text-lg font-semibold w-auto"
-          >
-            <FaSave className="text-2xl" />
-            Download Image
+          <button ref={buttonRef} onClick={handleDownloadImage}>
+            <div className="flex items-center justify-center gap-2 px-6 py-3 mt-10 mb-10 border-2 border-[#F4FAFE] bg-[#002042] text-[#F4FAFE] text-lg font-semibold w-auto">
+              <FaSave className="text-2xl" />
+              Download Image
+            </div>
           </button>
+
+          {/* Rotation message - Hidden during image capture */}
+          <div
+            ref={rotateMsgRef}
+            className="md:hidden flex flex-col items-center"
+          >
+            <span className="text-[#F4FAFE] text-xs md:text-sm -mt-8 max-w-[250px] flex items-center gap-2">
+              <MdScreenRotation className="text-l -mr-[4px]" />
+              Rotate device to landscape for
+            </span>
+            <span className="text-[#F4FAFE] text-xs md:text-sm max-w-[250px] pb-4">
+              better image sizing before downloading.
+            </span>
+          </div>
         </div>
       </section>
     </>
