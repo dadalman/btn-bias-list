@@ -73,8 +73,8 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-[#01274F] p-10 rounded-[2px] shadow-lg text-center max-w-[90%] w-[100%] md:w-[90%] h-[80%] flex flex-col">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[99999]">
+      <div className="bg-[#01274F] p-10 rounded-[2px] shadow-lg text-center max-w-[90%] w-[100%] md:w-[90%] h-[80%] flex flex-col z-[100000]">
         {/* Search Bar */}
         <div className="relative w-full md:w-auto">
           <Search

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import html2canvas from "html2canvas";
 import { FaSave } from "react-icons/fa";
 import BiasList from "@/components/BiasList";
@@ -12,6 +12,7 @@ export default function Home() {
   const buttonRef = useRef<HTMLButtonElement>(null); // Ref for hiding the button
   const footerRef = useRef<HTMLDivElement>(null); // Ref for showing the footer
   const rotateMsgRef = useRef<HTMLDivElement>(null); // Ref for hiding the rotation message
+  const [isDownloading, setIsDownloading] = useState(false);
 
   const handleDownloadImage = async () => {
     if (
@@ -26,6 +27,7 @@ export default function Home() {
     buttonRef.current.style.display = "none";
     footerRef.current.style.display = "block";
     rotateMsgRef.current.style.display = "none";
+    setIsDownloading(true);
 
     // Capture the image
     const canvas = await html2canvas(captureRef.current, {
@@ -38,6 +40,7 @@ export default function Home() {
     buttonRef.current.style.display = "flex";
     footerRef.current.style.display = "none";
     rotateMsgRef.current.style.display = "flex";
+    setIsDownloading(false);
 
     // Convert canvas to image and download
     const dataUrl = canvas.toDataURL("image/png");
@@ -55,7 +58,7 @@ export default function Home() {
       >
         <div
           ref={captureRef}
-          className="w-auto md:max-w-[950px] p-4 bg-[#01274F] shadow-[0px_4px_10px_rgba(0,0,0,0.5),_-0px_4px_10px_rgba(0,0,0,0.5)] flex flex-col items-center text-center"
+          className="w-auto md:w-[950px] sm:w-[556px] md:w-[556px]  p-4 bg-[#01274F] shadow-[0px_4px_10px_rgba(0,0,0,0.5),_-0px_4px_10px_rgba(0,0,0,0.5)] flex flex-col items-center text-center"
         >
           <img
             src="/assets/icons/btn-logo-transparent.png"
@@ -80,7 +83,7 @@ export default function Home() {
             className="md:mt-4 md:mb-4 mb-2 mt-2"
           />
 
-          <BiasList />
+          <BiasList downloading={isDownloading} />
 
           <img
             src="/assets/images/star-divider.png"
@@ -90,9 +93,13 @@ export default function Home() {
             className="md:mt-4 mt-2 mb-10"
           />
 
-          <h3 className="font-inter text-[18px] md:text-[24px] text-[#F4FAFE] -mt-2 md:mb-2">
+          <h3 className="font-inter text-[18px] md:text-[24px] text-[#F4FAFE] -mt-2 mb-3">
             Watchlist
           </h3>
+
+          {/* {isDownloading && (
+            <div style={{ height: "100px" }} ref={footerRef}></div>
+          )} */}
 
           <img
             src="/assets/images/divider.png"

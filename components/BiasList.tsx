@@ -11,14 +11,17 @@ interface Trainee {
   image: string;
 }
 
-const BiasList = () => {
+interface BiasListProps {
+  downloading: boolean; // New prop
+}
+
+const BiasList: React.FC<BiasListProps> = ({ downloading }) => {
   const [biasList, setBiasList] = useState<Trainee[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const data: Trainee[] = await getAllItems();
 
-      // Filter and sort trainees with ranks 1-9
       const filteredBiasList = data
         .filter((item) => item.rank >= 1 && item.rank <= 9)
         .sort((a, b) => a.rank - b.rank);
@@ -28,14 +31,13 @@ const BiasList = () => {
 
     fetchData();
 
-    // Listen for IndexedDB changes
     document.addEventListener("indexedDBUpdated", fetchData);
     return () => document.removeEventListener("indexedDBUpdated", fetchData);
   }, []);
 
   return (
     <section className="w-full flex flex-col items-center h-auto">
-      <div className="w-full md:max-w-[90%] flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-10">
+      <div className="w-full sm:w-[556px] md:w-[556px] lg:w-full flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-10">
         {biasList.map((bias) => (
           <div key={bias.id}>
             <TopRankFrame
@@ -43,6 +45,7 @@ const BiasList = () => {
               rank={bias.rank}
               image={bias.image}
               id={bias.id}
+              downloading={downloading} // Pass state as prop
             />
           </div>
         ))}
