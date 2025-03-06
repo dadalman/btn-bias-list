@@ -24,7 +24,11 @@ const BiasList: React.FC<BiasListProps> = ({ downloading }) => {
 
       const filteredBiasList = data
         .filter((item) => item.rank >= 1 && item.rank <= 9)
-        .sort((a, b) => a.rank - b.rank);
+        .sort((a, b) => a.rank - b.rank)
+        .map((item) => ({
+          ...item,
+          name: item.name === "TRAINEE" ? "" : item.name, // Replace "TRAINEE" with ""
+        }));
 
       setBiasList(filteredBiasList);
     };

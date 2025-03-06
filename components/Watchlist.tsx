@@ -21,7 +21,11 @@ const Watchlist = () => {
       // Filter and sort trainees with ranks 10-21
       const filteredWatchList = data
         .filter((item) => item.rank >= 10 && item.rank <= 21)
-        .sort((a, b) => a.rank - b.rank);
+        .sort((a, b) => a.rank - b.rank)
+        .map((item) => ({
+          ...item,
+          name: item.name === "TRAINEE" ? "" : item.name, // Replace "TRAINEE" with ""
+        }));
 
       setWatchList(filteredWatchList);
     };
