@@ -15,6 +15,7 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
+  const [showNotif, setShowNotif] = useState(true); // New state for notification dot
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -59,6 +60,11 @@ const Navbar = () => {
     };
   }, [lastScrollY]);
 
+  const handleMenuToggle = () => {
+    setShowMenu(!showMenu);
+    setShowNotif(false); // Hide the notification dot when menu is clicked
+  };
+
   return (
     <nav
       className={`w-full bg-[#01274F] text-white py-6 md:py-8 px-6 md:px-12 flex justify-between items-center fixed top-0 left-0 z-50 md:h-20 h-16 shadow-[0px_4px_10px_rgba(0,0,0,0.5),_0px_-4px_10px_rgba(0,0,0,0.5),_4px_0px_10px_rgba(0,0,0,0.5),_-4px_0px_10px_rgba(0,0,0,0.5)] transition-transform duration-300 ${
@@ -78,15 +84,21 @@ const Navbar = () => {
         />
       </a>
       <div className="relative" ref={menuRef}>
-        <button
-          onClick={() => setShowMenu(!showMenu)}
-          className="md:text-2xl text-xl"
-        >
-          {showMenu ? <FaTimes /> : <FaBars />}
-        </button>
+        <div className="relative">
+          <button
+            onClick={handleMenuToggle}
+            className="md:text-2xl text-xl relative"
+          >
+            {showMenu ? <FaTimes /> : <FaBars />}
+          </button>
+          {showNotif && (
+            <span className="absolute -top-2 -right-2 bg-red-500 w-3 h-3 rounded-full"></span>
+          )}
+        </div>
+
         {showMenu && (
-          <div className="absolute right-0 mt-2 bg-[#01274F] p-4 rounded-[2px] shadow-[0px_2px_5px_rgba(0,0,0,0.5),_0px_-2px_5px_rgba(0,0,0,0.5),_2px_0px_5px_rgba(0,0,0,0.5),_-2px_0px_5px_rgba(0,0,0,0.5)] flex flex-col space-y-4">
-            <div className="flex space-x-4">
+          <div className="absolute right-0 mt-2 bg-[#01274F] p-4 rounded-[2px] shadow-[0px_2px_5px_rgba(0,0,0,0.5),_0px_-2px_5px_rgba(0,0,0,0.5),_2px_0px_5px_rgba(0,0,0,0.5),_-2px_0px_5px_rgba(0,0,0,0.5)] flex flex-col space-y-4 w-[250px]">
+            <div className="flex space-x-4 justify-center">
               <a
                 href="https://www.facebook.com/BTN9DOFC"
                 target="_blank"
@@ -123,32 +135,45 @@ const Navbar = () => {
                 <FaYoutube className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
               </a>
             </div>
-            <a
-              href="#app-instructions"
-              className="block text-center hover:text-gray-300"
-            >
-              App Instructions
+            <hr className="mt-[20px]" />
+            <a href="/" className="block text-center hover:text-gray-300">
+              My Bias List
             </a>
-            <a
-              href="#voting-tutorial"
-              className="block text-center hover:text-gray-300"
-            >
-              <span className="inline-block bg-red-500 text-white text-xs px-2 py-[2px] rounded-[2px] text-center">
+
+            <div className="flex justify-center">
+              <a
+                href="/voting-tutorial"
+                className="block text-center hover:text-gray-300"
+              >
+                Voting Tutorial
+              </a>
+              <span className="ml-2 bg-red-500 text-white text-xs px-2 py-1 rounded-[2px] text-center ">
                 New
               </span>
-              <br />
-              Voting Tutorial
-            </a>
-            <a
-              href="#all-trainees"
-              className="block text-center hover:text-gray-300"
-            >
-              <span className="inline-block bg-gray-400 text-white text-xs px-2 py-[2px] rounded-[2px] text-center">
-                <div>Coming Soon</div>
+            </div>
+
+            <div className="flex justify-center">
+              <a
+                href="#all-trainees"
+                className="block hover:text-gray-300 text-gray-500 cursor-default"
+              >
+                Trainees List
+              </a>
+              <span className="ml-2 bg-gray-400 text-white text-xs px-2 py-1 rounded-[2px] text-center">
+                Coming Soon
               </span>
-              <br />
-              All Trainees Profile
-            </a>
+            </div>
+            <div className="flex justify-center">
+              <a
+                href="#all-trainees"
+                className="block hover:text-gray-300 text-gray-500 cursor-default"
+              >
+                Trainee Profiles
+              </a>
+              <span className="ml-2 bg-gray-400 text-white text-xs px-2 py-1 rounded-[2px] text-center">
+                Coming Soon
+              </span>
+            </div>
           </div>
         )}
       </div>
