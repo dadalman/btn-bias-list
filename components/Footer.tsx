@@ -46,12 +46,12 @@ const Footer = () => {
       <p className="text-sm md:text-base text-gray-300">
         Created by{" "}
         <a
-          href="https://www.linkedin.com/in/denver-dalman/"
+          href="https://www.tiktok.com/@davey_dalman"
           target="_blank"
           rel="noopener noreferrer"
           className="underline hover:text-white"
         >
-          DHAYNAMICO
+          BTN DAVEY
         </a>
       </p>
     </footer>

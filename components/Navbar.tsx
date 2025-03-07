@@ -104,35 +104,35 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebook className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
+                <FaFacebook className="cursor-pointer hover:text-gray-300 text-2xl" />
               </a>
               <a
                 href="https://www.instagram.com/bethenext_ofc/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
+                <FaInstagram className="cursor-pointer hover:text-gray-300 text-2xl" />
               </a>
               <a
                 href="https://x.com/BeTheNext_OFC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaXTwitter className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
+                <FaXTwitter className="cursor-pointer hover:text-gray-300 text-2xl" />
               </a>
               <a
                 href="https://www.tiktok.com/@bethenext_ofc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaTiktok className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
+                <FaTiktok className="cursor-pointer hover:text-gray-300 text-2xl" />
               </a>
               <a
                 href="https://www.youtube.com/@BeTheNextOFC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaYoutube className="cursor-pointer hover:text-gray-300 text-xl md:text-2xl" />
+                <FaYoutube className="cursor-pointer hover:text-gray-300 text-2xl" />
               </a>
             </div>
             <hr className="mt-[20px]" />
