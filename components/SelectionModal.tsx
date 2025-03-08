@@ -44,14 +44,17 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   const updateTraineeByRank = async (
     rank: number,
     name: string,
-    image: string
+    image: string,
+    country: string
   ) => {
     const traineeWithRank = {
       id: rank,
       name,
       image,
+      country,
       rank,
     };
+
     await updateItem(traineeWithRank);
     fetchSelectedTrainees(); // Refresh the list after updating
   };
@@ -60,14 +63,22 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   const handleTraineeClick = async (trainee: {
     name: string;
     image: string;
+    country: string;
   }) => {
-    await updateTraineeByRank(rank, trainee.name, trainee.image);
+    console.log("TRAINEE DETAILS:", trainee);
+
+    await updateTraineeByRank(
+      rank,
+      trainee.name,
+      trainee.image,
+      trainee.country
+    );
     onClose();
   };
 
   // Reset trainee to default based on rank
   const handleRemoveTrainee = async () => {
-    await updateTraineeByRank(rank, "", "/assets/images/blank-image.png");
+    await updateTraineeByRank(rank, "", "/assets/images/blank-image.png", "");
     fetchSelectedTrainees();
     onClose();
   };

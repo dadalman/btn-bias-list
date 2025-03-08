@@ -10,7 +10,18 @@ interface TopRankFrameProps {
   name: string;
   image: string;
   downloading: boolean; // New prop
+  country?: string; // Make country optional
 }
+
+const countryFlagMap: { [key: string]: string } = {
+  MM: "/assets/icons/mm-circle.png",
+  KR: "/assets/icons/kr-circle.png",
+  JP: "/assets/icons/jp-circle.png",
+  CA: "/assets/icons/ca-circle.png",
+  US: "/assets/icons/us-circle.png",
+  PH: "/assets/icons/ph-circle.png",
+  TH: "/assets/icons/th-circle.png",
+};
 
 const TopRankFrame: React.FC<TopRankFrameProps> = ({
   name,
@@ -18,16 +29,15 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
   image,
   id,
   downloading, // Receive the prop
+  country,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const countryFlag = country ? countryFlagMap[country] : "";
 
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full md:py-1 py-1 bg-[#01274F] text-[#F4FAFE] rounded-lg">
         <span className="text-lg font-bold">Top {rank}</span>
-
-        {/* Show only when downloading */}
-        {/* {downloading && <div style={{ height: "10px" }}></div>} */}
 
         <div style={{ height: "15px" }}></div>
 
@@ -44,6 +54,7 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
             />
           </div>
 
+          {/* Left Crest */}
           <div className="absolute md:bottom-[10px] md:left-[15px] bottom-[10px] left-[15px] transform -translate-x-3 translate-y-3">
             <img
               src="/assets/icons/btn-crest-logo-transparent.png"
@@ -51,13 +62,32 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
               className="w-[28px] h-[28px] md:w-[45px] md:h-[45px]"
             />
           </div>
+
+          {/* Right Flag - Only show if country is defined */}
+          {/* {countryFlag && (
+            <div className="absolute md:bottom-[10px] md:right-[15px] bottom-[10px] right-[15px] transform translate-x-3 translate-y-3">
+              <img
+                src={countryFlag}
+                alt="Country Flag"
+                className="w-[28px] h-[28px] md:w-[45px] md:h-[45px]"
+              />
+            </div>
+          )} */}
         </button>
 
-        {/* Show only when downloading */}
-        {/* {downloading && <div style={{ height: "20px" }}></div>} */}
         <div style={{ height: "5px" }}></div>
 
-        <span className="text-lg font-bold">{name}</span>
+        {/* Name with flag */}
+        <div className="flex items-center gap-1 ">
+          {countryFlag && (
+            <img
+              src={countryFlag}
+              alt="Country Flag"
+              className="w-[20px] h-[20px] md:w-[25px] md:h-[25px]"
+            />
+          )}
+          <span className="text-lg font-bold">{name}</span>
+        </div>
       </div>
 
       <SelectionModal

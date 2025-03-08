@@ -9,6 +9,7 @@ interface Trainee {
   rank: number;
   name: string;
   image: string;
+  country: string;
 }
 
 const Watchlist = () => {
@@ -47,6 +48,7 @@ const Watchlist = () => {
               image={watchlist.image}
               id={watchlist.id}
               rank={watchlist.rank}
+              country={watchlist.country}
             />
           </div>
         ))}

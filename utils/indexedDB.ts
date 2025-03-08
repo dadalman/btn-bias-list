@@ -95,6 +95,7 @@ export const removeItem = async (id: number) => {
       id,
       name: "TRAINEE",
       image: "/assets/images/blank-image.png",
+      county: "",
     };
 
     const request = store.put(defaultTrainee);

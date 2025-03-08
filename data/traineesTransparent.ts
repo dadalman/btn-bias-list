@@ -111,7 +111,7 @@ const traineesTransparent = [
     id: 19,
     name: "GEORGY",
     image: "/assets/images/trainees-transparent/GEORGY.png",
-    country: "PH",
+    country: "CA",
   },
   {
     id: 20,
@@ -153,7 +153,7 @@ const traineesTransparent = [
     id: 26,
     name: "IVAN",
     image: "/assets/images/trainees-transparent/IVAN.png",
-    country: "PH",
+    country: "KR",
   },
   {
     id: 27,
@@ -165,7 +165,7 @@ const traineesTransparent = [
     id: 28,
     name: "JARRED",
     image: "/assets/images/trainees-transparent/JARRED.png",
-    country: "PH",
+    country: "CA",
   },
   {
     id: 29,
@@ -219,7 +219,7 @@ const traineesTransparent = [
     id: 37,
     name: "KELVIN",
     image: "/assets/images/trainees-transparent/KELVIN.png",
-    country: "PH",
+    country: "CA",
   },
   {
     id: 38,
@@ -231,13 +231,13 @@ const traineesTransparent = [
     id: 39,
     name: "KIEN",
     image: "/assets/images/trainees-transparent/KIEN.png",
-    country: "PH",
+    country: "CA",
   },
   {
     id: 40,
     name: "K.O.",
     image: "/assets/images/trainees-transparent/KO.png",
-    country: "PH",
+    country: "TH",
   },
   {
     id: 41,
@@ -279,7 +279,7 @@ const traineesTransparent = [
     id: 47,
     name: "LEO",
     image: "/assets/images/trainees-transparent/LEO.png",
-    country: "PH",
+    country: "US",
   },
   {
     id: 48,
@@ -303,7 +303,7 @@ const traineesTransparent = [
     id: 51,
     name: "PERFECT",
     image: "/assets/images/trainees-transparent/PERFECT.png",
-    country: "PH",
+    country: "TH",
   },
   {
     id: 52,
@@ -315,7 +315,7 @@ const traineesTransparent = [
     id: 53,
     name: "Q",
     image: "/assets/images/trainees-transparent/Q.png",
-    country: "PH",
+    country: "TH",
   },
   {
     id: 54,
@@ -369,7 +369,7 @@ const traineesTransparent = [
     id: 62,
     name: "SMILEONE",
     image: "/assets/images/trainees-transparent/SMILEONE.png",
-    country: "PH",
+    country: "MM",
   },
   {
     id: 63,
@@ -429,7 +429,7 @@ const traineesTransparent = [
     id: 72,
     name: "YUNHO",
     image: "/assets/images/trainees-transparent/YUNHO.png",
-    country: "PH",
+    country: "KR",
   },
   {
     id: 73,

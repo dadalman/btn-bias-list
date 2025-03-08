@@ -51,7 +51,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="underline hover:text-white"
         >
-          BTN DAVEY
+          DHAYNAMICO
         </a>
       </p>
     </footer>

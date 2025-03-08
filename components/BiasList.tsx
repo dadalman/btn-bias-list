@@ -9,6 +9,7 @@ interface Trainee {
   rank: number;
   name: string;
   image: string;
+  country: string;
 }
 
 interface BiasListProps {
@@ -50,6 +51,7 @@ const BiasList: React.FC<BiasListProps> = ({ downloading }) => {
               image={bias.image}
               id={bias.id}
               downloading={downloading} // Pass state as prop
+              country={bias.country}
             />
           </div>
         ))}

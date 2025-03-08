@@ -9,14 +9,27 @@ interface WatchlistFrameProps {
   name: string;
   image: string;
   rank: number;
+  country?: string; // Optional country prop
 }
+
+const countryFlagMap: { [key: string]: string } = {
+  MM: "/assets/icons/mm-circle.png",
+  KR: "/assets/icons/kr-circle.png",
+  JP: "/assets/icons/jp-circle.png",
+  CA: "/assets/icons/ca-circle.png",
+  US: "/assets/icons/us-circle.png",
+  PH: "/assets/icons/ph-circle.png",
+  TH: "/assets/icons/th-circle.png",
+};
 
 const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
   name,
   image,
   rank,
+  country,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const countryFlag = country ? countryFlagMap[country] : "";
 
   return (
     <>
@@ -24,7 +37,7 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
         {/* Clickable Circle - Opens Modal */}
         <button
           className="w-[65px] h-[65px] md:w-[100px] md:h-[100px] bg-[#92D0F3] rounded-full flex items-center justify-center shadow-lg "
-          onClick={() => setIsModalOpen(true)} // ✅ Ensures modal opens correctly
+          onClick={() => setIsModalOpen(true)}
         >
           <div className="w-[57px] h-[57px] md:w-[90px] md:h-[90px] bg-[#b8c2d5] rounded-full flex items-center justify-center overflow-hidden">
             <img
@@ -37,8 +50,19 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
           </div>
         </button>
 
-        {/* Name */}
-        <span className="text-md md:text-lg font-semibold">{name}</span>
+        {/* Name with flag - Aligned horizontally */}
+        <div className="flex items-center justify-center gap-1">
+          {countryFlag && (
+            <img
+              src={countryFlag}
+              alt="Country Flag"
+              className="w-[20px] h-[20px] md:w-[25px] md:h-[25px] object-contain"
+            />
+          )}
+          <span className="text-md md:text-lg font-semibold align-middle whitespace-nowrap pt-1">
+            {name}
+          </span>
+        </div>
       </div>
 
       {/* Modal Component */}
