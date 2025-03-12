@@ -789,8 +789,8 @@ const traineesTransparent = [
     zodiac: "Sagittarius",
     mbti: "INTJ",
     favoriteColor: "Deep Forest Green",
-    favoriteFood: "",
-    favoriteArtist: "",
+    favoriteFood: "Ice Cream",
+    favoriteArtist: "Iz*One, SZA, EXO, ZB1",
     nationality: "",
   },
   {
