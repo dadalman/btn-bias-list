@@ -52,7 +52,7 @@ const TraineeModal: React.FC<{
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-[99999]">
-      <div className="bg-[#01274F] px-6 py-8 rounded-lg shadow-lg text-center max-w-[90%] w-[100%] md:w-[50%] flex flex-col z-[100000] text-[#F4FAFE] max-h-[90vh] overflow-y-auto">
+      <div className="bg-[#01274F] px-6 py-8 rounded-[2px] shadow-lg text-center max-w-[90%] w-[100%] md:w-[50%] flex flex-col z-[100000] text-[#F4FAFE] max-h-[90vh] overflow-y-auto">
         {/* Profile Image Container */}
         <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
           <img
