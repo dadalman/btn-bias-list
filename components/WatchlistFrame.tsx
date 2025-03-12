@@ -51,7 +51,7 @@ const WatchlistFrame: React.FC<WatchlistFrameProps> = ({
         </button>
 
         {/* Name with flag - Aligned horizontally */}
-        <div className="flex items-center justify-center gap-1">
+        <div className="flex items-center justify-center gap-1 -ml-2">
           {countryFlag && (
             <img
               src={countryFlag}

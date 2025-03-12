@@ -113,7 +113,11 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
                   onClick={() => handleTraineeClick(trainee)}
                   className="cursor-pointer"
                 >
-                  <TraineesProfile name={trainee.name} image={trainee.image} />
+                  <TraineesProfile
+                    name={trainee.name}
+                    image={trainee.image}
+                    country={trainee.country}
+                  />
                 </div>
               ))
             ) : (

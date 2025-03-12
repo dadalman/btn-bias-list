@@ -78,7 +78,7 @@ const TopRankFrame: React.FC<TopRankFrameProps> = ({
         <div style={{ height: "5px" }}></div>
 
         {/* Name with flag */}
-        <div className="flex items-center gap-1 ">
+        <div className="flex items-center gap-1 -ml-2">
           {countryFlag && (
             <img
               src={countryFlag}
