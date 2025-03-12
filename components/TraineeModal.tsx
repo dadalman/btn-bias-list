@@ -75,7 +75,7 @@ const TraineeModal: React.FC<{
         <hr className="border-[#F4FAFE] my-4" />
 
         {/* Dreamers Info */}
-        <h3 className="text-lg font-semibold mb-[10px]">DREAMERS INFO:</h3>
+        <h3 className="text-lg font-semibold mb-[10px]">DREAMER'S INFO:</h3>
         <p>
           🌟 <b>Stage Name:</b> {trainee.name}
         </p>
