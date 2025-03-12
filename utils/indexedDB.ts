@@ -72,16 +72,36 @@ export const getAllItems = async (): Promise<any[]> => {
 // ✅ Update or Add trainee
 export const updateItem = async (item: any) => {
   const db = await openDB();
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     const transaction = db.transaction(STORE_NAME, "readwrite");
     const store = transaction.objectStore(STORE_NAME);
-    const request = store.put({ ...item, rank: Number(item.rank) });
+    const getAllRequest = store.getAll();
 
-    transaction.oncomplete = () => {
-      dispatchDBUpdate(); // 🔥 Notify app of DB change
-      resolve(true);
+    getAllRequest.onsuccess = () => {
+      const existingTrainee = getAllRequest.result.find(
+        (trainee: any) => trainee.name === item.name
+      );
+
+      if (existingTrainee) {
+        const defaultTrainee = {
+          id: existingTrainee.id,
+          name: "TRAINEE",
+          image: "/assets/images/blank-image.png",
+          county: "",
+          rank: existingTrainee.rank, // Preserve rank
+        };
+        store.put(defaultTrainee);
+      }
+
+      const request = store.put({ ...item, rank: Number(item.rank) });
+      request.onsuccess = () => {
+        dispatchDBUpdate(); // 🔥 Notify app of DB change
+        resolve(true);
+      };
+      request.onerror = () => reject(request.error);
     };
-    request.onerror = () => reject(request.error);
+
+    getAllRequest.onerror = () => reject(getAllRequest.error);
   });
 };
 
@@ -91,19 +111,25 @@ export const removeItem = async (id: number) => {
   return new Promise((resolve, reject) => {
     const transaction = db.transaction(STORE_NAME, "readwrite");
     const store = transaction.objectStore(STORE_NAME);
-    const defaultTrainee = {
-      id,
-      name: "TRAINEE",
-      image: "/assets/images/blank-image.png",
-      county: "",
+    const request = store.get(id);
+
+    request.onsuccess = () => {
+      const existingTrainee = request.result;
+      const defaultTrainee = {
+        id,
+        name: "TRAINEE",
+        image: "/assets/images/blank-image.png",
+        county: "",
+        rank: existingTrainee ? existingTrainee.rank : null, // Preserve rank
+      };
+
+      store.put(defaultTrainee);
+      transaction.oncomplete = () => {
+        dispatchDBUpdate(); // 🔥 Notify app of DB change
+        resolve(true);
+      };
     };
 
-    const request = store.put(defaultTrainee);
-
-    transaction.oncomplete = () => {
-      dispatchDBUpdate(); // 🔥 Notify app of DB change
-      resolve(true);
-    };
     request.onerror = () => reject(request.error);
   });
 };

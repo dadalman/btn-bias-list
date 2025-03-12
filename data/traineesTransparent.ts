@@ -121,6 +121,18 @@ const traineesTransparent = [
   },
   {
     id: 11,
+    name: "CALIX",
+    image: "/assets/images/trainees-transparent/CALIX.png",
+    country: "PH",
+    zodiac: "Taurus",
+    mbti: "",
+    favoriteColor: "",
+    favoriteFood: "",
+    favoriteArtist: "",
+    nationality: "",
+  },
+  {
+    id: 12,
     name: "CODY",
     image: "/assets/images/trainees-transparent/CODY.png",
     country: "PH",
@@ -132,7 +144,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 12,
+    id: 13,
     name: "DAVEY",
     image: "/assets/images/trainees-transparent/DAVEY.png",
     country: "PH",
@@ -144,7 +156,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 13,
+    id: 14,
     name: "DREE",
     image: "/assets/images/trainees-transparent/DREE.png",
     country: "PH",
@@ -156,7 +168,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 14,
+    id: 15,
     name: "DREI",
     image: "/assets/images/trainees-transparent/DREI.png",
     country: "PH",
@@ -168,7 +180,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 15,
+    id: 16,
     name: "DYLAN",
     image: "/assets/images/trainees-transparent/DYLAN.png",
     country: "PH",
@@ -180,7 +192,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 16,
+    id: 17,
     name: "ELO",
     image: "/assets/images/trainees-transparent/ELO.png",
     country: "PH",
@@ -192,7 +204,7 @@ const traineesTransparent = [
     nationality: "Filipino (Half Chinese - Half Garter)",
   },
   {
-    id: 17,
+    id: 18,
     name: "FRANCIS",
     image: "/assets/images/trainees-transparent/FRANCIS.png",
     country: "PH",
@@ -204,7 +216,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 18,
+    id: 19,
     name: "GELO",
     image: "/assets/images/trainees-transparent/GELO.png",
     country: "PH",
@@ -216,7 +228,7 @@ const traineesTransparent = [
     nationality: "Filipino (1/4 Chinese, 1/4 Spanish, 1/2 Filipino)",
   },
   {
-    id: 19,
+    id: 20,
     name: "GEORGY",
     image: "/assets/images/trainees-transparent/GEORGY.png",
     country: "CA",
@@ -228,7 +240,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 20,
+    id: 21,
     name: "GIAN",
     image: "/assets/images/trainees-transparent/GIAN.png",
     country: "PH",
@@ -240,7 +252,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 21,
+    id: 22,
     name: "GREG",
     image: "/assets/images/trainees-transparent/GREG.png",
     country: "PH",
@@ -252,7 +264,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 22,
+    id: 23,
     name: "HARRY",
     image: "/assets/images/trainees-transparent/HARRY.png",
     country: "PH",
@@ -264,7 +276,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 23,
+    id: 24,
     name: "HART",
     image: "/assets/images/trainees-transparent/HART.png",
     country: "PH",
@@ -276,7 +288,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 24,
+    id: 25,
     name: "HAYAMI",
     image: "/assets/images/trainees-transparent/HAYAMI.png",
     country: "PH",
@@ -288,7 +300,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 25,
+    id: 26,
     name: "HIRO",
     image: "/assets/images/trainees-transparent/HIRO.png",
     country: "PH",
@@ -300,7 +312,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 26,
+    id: 27,
     name: "IVAN",
     image: "/assets/images/trainees-transparent/IVAN.png",
     country: "KR",
@@ -312,7 +324,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 27,
+    id: 28,
     name: "JACOB",
     image: "/assets/images/trainees-transparent/JACOB.png",
     country: "PH",
@@ -324,7 +336,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 28,
+    id: 29,
     name: "JARRED",
     image: "/assets/images/trainees-transparent/JARRED.png",
     country: "CA",
@@ -336,7 +348,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 29,
+    id: 30,
     name: "JAY",
     image: "/assets/images/trainees-transparent/JAY.png",
     country: "PH",
@@ -348,7 +360,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 30,
+    id: 31,
     name: "JAYSON",
     image: "/assets/images/trainees-transparent/JAYSON.png",
     country: "PH",
@@ -360,7 +372,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 31,
+    id: 32,
     name: "JELORD",
     image: "/assets/images/trainees-transparent/JELORD.png",
     country: "PH",
@@ -372,7 +384,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 32,
+    id: 33,
     name: "JEYPI",
     image: "/assets/images/trainees-transparent/JEYPI.png",
     country: "PH",
@@ -384,7 +396,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 33,
+    id: 34,
     name: "JUACHO",
     image: "/assets/images/trainees-transparent/JUACHO.png",
     country: "PH",
@@ -396,7 +408,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 34,
+    id: 35,
     name: "KAI",
     image: "/assets/images/trainees-transparent/KAI.png",
     country: "PH",
@@ -409,7 +421,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 35,
+    id: 36,
     name: "KAIRO",
     image: "/assets/images/trainees-transparent/KAIRO.png",
     country: "PH",
@@ -421,7 +433,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 36,
+    id: 37,
     name: "KARL",
     image: "/assets/images/trainees-transparent/KARL.png",
     country: "PH",
@@ -433,7 +445,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 37,
+    id: 38,
     name: "KELVIN",
     image: "/assets/images/trainees-transparent/KELVIN.png",
     country: "CA",
@@ -445,7 +457,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 38,
+    id: 39,
     name: "KENSHIN",
     image: "/assets/images/trainees-transparent/KENSHIN.png",
     country: "PH",
@@ -457,7 +469,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 39,
+    id: 40,
     name: "KIEN",
     image: "/assets/images/trainees-transparent/KIEN.png",
     country: "CA",
@@ -469,7 +481,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 40,
+    id: 41,
     name: "K.O.",
     image: "/assets/images/trainees-transparent/KO.png",
     country: "TH",
@@ -481,7 +493,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 41,
+    id: 42,
     name: "KRISTOFF",
     image: "/assets/images/trainees-transparent/KRISTOFF.png",
     country: "PH",
@@ -493,7 +505,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 42,
+    id: 43,
     name: "KYEO",
     image: "/assets/images/trainees-transparent/KYEO.png",
     country: "PH",
@@ -505,7 +517,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 43,
+    id: 44,
     name: "KYLEX",
     image: "/assets/images/trainees-transparent/KYLEX.png",
     country: "PH",
@@ -517,7 +529,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 44,
+    id: 45,
     name: "KYLO",
     image: "/assets/images/trainees-transparent/KYLO.png",
     country: "PH",
@@ -529,7 +541,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 45,
+    id: 46,
     name: "LANZ",
     image: "/assets/images/trainees-transparent/LANZ.png",
     country: "PH",
@@ -541,7 +553,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 46,
+    id: 47,
     name: "LEM",
     image: "/assets/images/trainees-transparent/LEM.png",
     country: "PH",
@@ -553,7 +565,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 47,
+    id: 48,
     name: "LEO",
     image: "/assets/images/trainees-transparent/LEO.png",
     country: "US",
@@ -565,7 +577,7 @@ const traineesTransparent = [
     nationality: "American, Thai",
   },
   {
-    id: 48,
+    id: 49,
     name: "MARCO",
     image: "/assets/images/trainees-transparent/MARCO.png",
     country: "PH",
@@ -577,7 +589,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 49,
+    id: 50,
     name: "MATTY",
     image: "/assets/images/trainees-transparent/MATTY.png",
     country: "PH",
@@ -590,7 +602,7 @@ const traineesTransparent = [
     nationality: "Filipino (1/8 Chinese)",
   },
   {
-    id: 50,
+    id: 51,
     name: "PAUL",
     image: "/assets/images/trainees-transparent/PAUL.png",
     country: "PH",
@@ -602,7 +614,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 51,
+    id: 52,
     name: "PERFECT",
     image: "/assets/images/trainees-transparent/PERFECT.png",
     country: "TH",
@@ -614,7 +626,7 @@ const traineesTransparent = [
     nationality: "Thai",
   },
   {
-    id: 52,
+    id: 53,
     name: "PRINCE",
     image: "/assets/images/trainees-transparent/PRINCE.png",
     country: "PH",
@@ -626,7 +638,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 53,
+    id: 54,
     name: "Q",
     image: "/assets/images/trainees-transparent/Q.png",
     country: "TH",
@@ -638,7 +650,7 @@ const traineesTransparent = [
     nationality: "Thai",
   },
   {
-    id: 54,
+    id: 55,
     name: "RAFAEL",
     image: "/assets/images/trainees-transparent/RAFAEL.png",
     country: "PH",
@@ -650,7 +662,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 55,
+    id: 56,
     name: "RAM",
     image: "/assets/images/trainees-transparent/RAM.png",
     country: "PH",
@@ -662,7 +674,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 56,
+    id: 57,
     name: "RAWN",
     image: "/assets/images/trainees-transparent/RAWN.png",
     country: "PH",
@@ -674,7 +686,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 57,
+    id: 58,
     name: "RICHARD",
     image: "/assets/images/trainees-transparent/RICHARD.png",
     country: "PH",
@@ -686,7 +698,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 58,
+    id: 59,
     name: "ROV",
     image: "/assets/images/trainees-transparent/ROV.png",
     country: "PH",
@@ -698,7 +710,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 59,
+    id: 60,
     name: "SAM",
     image: "/assets/images/trainees-transparent/SAM.png",
     country: "PH",
@@ -710,7 +722,7 @@ const traineesTransparent = [
     nationality: "Filino",
   },
   {
-    id: 60,
+    id: 61,
     name: "SANDIE",
     image: "/assets/images/trainees-transparent/SANDIE.png",
     country: "PH",
@@ -722,7 +734,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 61,
+    id: 62,
     name: "SEB",
     image: "/assets/images/trainees-transparent/SEB.png",
     country: "PH",
@@ -734,7 +746,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 62,
+    id: 63,
     name: "SMILEONE",
     image: "/assets/images/trainees-transparent/SMILEONE.png",
     country: "MM",
@@ -746,7 +758,7 @@ const traineesTransparent = [
     nationality: "Myanmar, Chinese",
   },
   {
-    id: 63,
+    id: 64,
     name: "STEEL",
     image: "/assets/images/trainees-transparent/STEEL.png",
     country: "PH",
@@ -758,7 +770,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 64,
+    id: 65,
     name: "TEHLL",
     image: "/assets/images/trainees-transparent/TEHLL.png",
     country: "PH",
@@ -770,7 +782,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 65,
+    id: 66,
     name: "VHINZ",
     image: "/assets/images/trainees-transparent/VHINZ.png",
     country: "PH",
@@ -782,7 +794,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 66,
+    id: 67,
     name: "VI",
     image: "/assets/images/trainees-transparent/VI.png",
     country: "PH",
@@ -794,7 +806,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 67,
+    id: 68,
     name: "VYNZ",
     image: "/assets/images/trainees-transparent/VYNZ.png",
     country: "PH",
@@ -806,7 +818,7 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 68,
+    id: 69,
     name: "WAVE",
     image: "/assets/images/trainees-transparent/WAVE.png",
     country: "PH",
@@ -818,7 +830,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 69,
+    id: 70,
     name: "YANNIE",
     image: "/assets/images/trainees-transparent/YANNIE.png",
     country: "PH",
@@ -830,7 +842,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 70,
+    id: 71,
     name: "YEIN",
     image: "/assets/images/trainees-transparent/YEIN.png",
     country: "PH",
@@ -842,7 +854,7 @@ const traineesTransparent = [
     nationality: "Filipino, Chinese",
   },
   {
-    id: 71,
+    id: 72,
     name: "YOHAN",
     image: "/assets/images/trainees-transparent/YOHAN.png",
     country: "PH",
@@ -854,7 +866,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 72,
+    id: 73,
     name: "YUNHO",
     image: "/assets/images/trainees-transparent/YUNHO.png",
     country: "KR",
@@ -866,7 +878,7 @@ const traineesTransparent = [
     nationality: "",
   },
   {
-    id: 73,
+    id: 74,
     name: "ZO",
     image: "/assets/images/trainees-transparent/ZO.png",
     country: "PH",
@@ -878,23 +890,11 @@ const traineesTransparent = [
     nationality: "Filipino",
   },
   {
-    id: 74,
+    id: 75,
     name: "ZOR",
     image: "/assets/images/trainees-transparent/ZOR.png",
     country: "PH",
     zodiac: "",
-    mbti: "",
-    favoriteColor: "",
-    favoriteFood: "",
-    favoriteArtist: "",
-    nationality: "",
-  },
-  {
-    id: 75,
-    name: "CALIX",
-    image: "/assets/images/trainees-transparent/CALIX.png",
-    country: "PH",
-    zodiac: "Taurus",
     mbti: "",
     favoriteColor: "",
     favoriteFood: "",

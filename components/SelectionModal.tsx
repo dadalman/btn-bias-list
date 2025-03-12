@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import traineesTransparent from "@/data/traineesTransparent";
 import TraineesProfile from "./TraineesProfile";
-import { updateItem, getAllItems } from "@/utils/indexedDB"; // ✅ Ensure correct imports
+import { updateItem, getAllItems } from "@/utils/indexedDB";
 
 interface ModalProps {
   isOpen: boolean;
@@ -14,30 +14,12 @@ interface ModalProps {
 
 const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   const [search, setSearch] = useState("");
-  const [selectedTrainees, setSelectedTrainees] = useState<string[]>([]);
-
-  useEffect(() => {
-    if (isOpen) {
-      fetchSelectedTrainees();
-    }
-  }, [isOpen]);
-
-  // Fetch already selected trainees from IndexedDB
-  const fetchSelectedTrainees = async () => {
-    const trainees = await getAllItems(); // Retrieves all ranked trainees
-    const selectedNames = trainees
-      .map((t: { name: string }) => t.name)
-      .filter((name) => name !== ""); // Remove empty slots
-    setSelectedTrainees(selectedNames);
-  };
 
   if (!isOpen) return null;
 
-  // Filter trainees based on search input and remove already selected ones
-  const filteredTrainees = traineesTransparent.filter(
-    (trainee) =>
-      trainee.name.toLowerCase().includes(search.toLowerCase()) &&
-      !selectedTrainees.includes(trainee.name) // Prevent selection of already chosen trainees
+  // Filter trainees based on search input
+  const filteredTrainees = traineesTransparent.filter((trainee) =>
+    trainee.name.toLowerCase().includes(search.toLowerCase())
   );
 
   // Function to update trainee by rank in IndexedDB
@@ -56,7 +38,6 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
     };
 
     await updateItem(traineeWithRank);
-    fetchSelectedTrainees(); // Refresh the list after updating
   };
 
   // Handle trainee selection - Update trainee based on rank
@@ -79,7 +60,6 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
   // Reset trainee to default based on rank
   const handleRemoveTrainee = async () => {
     await updateTraineeByRank(rank, "", "/assets/images/blank-image.png", "");
-    fetchSelectedTrainees();
     onClose();
   };
 
@@ -103,7 +83,7 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
 
         <hr className="mt-[20px]" />
 
-        {/* Scrollable Trainee List (Takes up Remaining Space) */}
+        {/* Scrollable Trainee List */}
         <section className="w-full flex-grow flex flex-col items-center overflow-y-auto pt-[20px]">
           <div className="w-full flex flex-wrap justify-center gap-4 md:gap-10">
             {filteredTrainees.length > 0 ? (
@@ -126,11 +106,11 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
           </div>
         </section>
 
-        {/* Buttons (Stick to Bottom) */}
+        {/* Buttons */}
         <div className="flex flex-col md:flex-row justify-end items-center gap-4 mt-5 w-full">
           <button
             className="px-6 py-2 md:py-3 border-2 border-[#F4FAFE] bg-[#002042] text-[#F4FAFE] font-semibold w-full md:w-auto rounded-[2px]"
-            onClick={handleRemoveTrainee} // Reset trainee based on rank
+            onClick={handleRemoveTrainee}
           >
             Remove Trainee
           </button>
