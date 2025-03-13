@@ -107,6 +107,17 @@ const TraineeModal: React.FC<{
         <p>
           🗺 <b>Nationality:</b> {trainee.nationality}
         </p>
+        {/* TMI Section */}
+        {trainee.tmi && trainee.tmi.length > 0 && (
+          <div className="mt-4 text-center">
+            <h3 className="text-lg font-semibold">TMI:</h3>
+            <ul className="list-disc list-inside">
+              {trainee.tmi.map((fact, index) => (
+                <li key={index}>{fact}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Buttons */}
         <button
