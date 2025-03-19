@@ -479,7 +479,7 @@ const traineesTransparent = [
     nationality: "Canadian (Canadian - Vietnamese)",
     tmi: [
       "I am a competitor on Canada's Got Talent S4.",
-      "I've met ZEROBASEONE.",
+      "I've met ZEROBASEONE.", "I've been a hardcore bubble tea barista for 3 years."
     ],
   },
   {
@@ -516,7 +516,7 @@ const traineesTransparent = [
     favoriteColor: "",
     favoriteFood: "",
     favoriteArtist: "",
-    nationality: "",
+    nationality: "Thai", tmi: ['K.O. was in the former Thai-Korean survival show “9low On Top”','K.O. was released his composed song “Fulfilled”.', "K.O. danced Hard Carry for Dream Stage with BAMBAM, Youngjae (GOT7) x TNX on KCON 2023 Thailand.",  "K.O. was a dancer in YOU BETTER LOVE ME CONCERT (Violette Wautier) and ZeeNunew 1st Concert."]
   },
   {
     id: 42,
