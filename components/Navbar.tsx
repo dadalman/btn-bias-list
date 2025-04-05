@@ -157,10 +157,10 @@ const Navbar = () => {
                 Trainees List
               </a>
               <span className="ml-2 bg-red-500 text-white text-xs px-2 py-1 rounded-[2px] text-center ">
-                Beta
+                Updated
               </span>
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <a
                 href="#all-trainees"
                 className="block hover:text-gray-500 text-gray-500 cursor-default"
@@ -170,7 +170,7 @@ const Navbar = () => {
               <span className="ml-2 bg-gray-400 text-white text-xs px-2 py-1 rounded-[2px] text-center">
                 Coming Soon
               </span>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
