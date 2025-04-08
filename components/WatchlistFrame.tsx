@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import SelectionModal from "./SelectionModal"; // Import Modal component
-import Image from "next/image";
 
 interface WatchlistFrameProps {
   id: number;
