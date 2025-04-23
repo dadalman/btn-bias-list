@@ -71,7 +71,12 @@ const traineesTransparent = [
     favoriteFood: "Steak and Salmon Sushi :>",
     favoriteArtist: "Twice and NMIXX",
     nationality: "Filipino",
-   tmi:  ["I’m a Certified Public Accountant 🤪", "I’ve been a theatre actor since i was 7", "I baked and sold cookies online before becoming a trainee", "I don’t like cooked fish"]
+    tmi: [
+      "I’m a Certified Public Accountant 🤪",
+      "I’ve been a theatre actor since i was 7",
+      "I baked and sold cookies online before becoming a trainee",
+      "I don’t like cooked fish",
+    ],
   },
   {
     id: 7,
@@ -480,7 +485,8 @@ const traineesTransparent = [
     nationality: "Canadian (Canadian - Vietnamese)",
     tmi: [
       "I am a competitor on Canada's Got Talent S4.",
-      "I've met ZEROBASEONE.", "I've been a hardcore bubble tea barista for 3 years."
+      "I've met ZEROBASEONE.",
+      "I've been a hardcore bubble tea barista for 3 years.",
     ],
   },
   {
@@ -517,7 +523,13 @@ const traineesTransparent = [
     favoriteColor: "",
     favoriteFood: "",
     favoriteArtist: "",
-    nationality: "Thai", tmi: ['K.O. was in the former Thai-Korean survival show “9low On Top”','K.O. was released his composed song “Fulfilled”.', "K.O. danced Hard Carry for Dream Stage with BAMBAM, Youngjae (GOT7) x TNX on KCON 2023 Thailand.",  "K.O. was a dancer in YOU BETTER LOVE ME CONCERT (Violette Wautier) and ZeeNunew 1st Concert."]
+    nationality: "Thai",
+    tmi: [
+      "K.O. was in the former Thai-Korean survival show “9low On Top”",
+      "K.O. was released his composed song “Fulfilled”.",
+      "K.O. danced Hard Carry for Dream Stage with BAMBAM, Youngjae (GOT7) x TNX on KCON 2023 Thailand.",
+      "K.O. was a dancer in YOU BETTER LOVE ME CONCERT (Violette Wautier) and ZeeNunew 1st Concert.",
+    ],
   },
   {
     id: 42,
@@ -908,7 +920,7 @@ const traineesTransparent = [
     favoriteArtist: "TJ Monterde",
     nationality: "Filipino, Chinese",
   },
-  { 
+  {
     id: 72,
     name: "YOHAN",
     image: "/assets/images/trainees-transparent/YOHAN.png",
@@ -938,10 +950,10 @@ const traineesTransparent = [
     image: "/assets/images/trainees-transparent/ZO.png",
     country: "PH",
     zodiac: "Sagittarius",
-    mbti: "ENTP",
+    mbti: "INTP",
     favoriteColor: "Red, Black",
-    favoriteFood: "",
-    favoriteArtist: "One Direction",
+    favoriteFood: "Fench Fries 🍟",
+    favoriteArtist: "ATEEZ (에이티즈)",
     nationality: "Filipino",
   },
   {
