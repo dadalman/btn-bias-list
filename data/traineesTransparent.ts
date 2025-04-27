@@ -10,6 +10,8 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    message:
+      "Hi Adi! We were together sa auditions at sa signing dito sa loob ng shoow. No eme, you are one of the people na I truly believe has the potential to make it big sa industry. I know na you faced a lot of challenges here, especially with being in a team, but I know na it's not just me who saw how much you've improved. Not just as an artist, but as a person also. Hwaiting always Adi! I hope to see you shine on stage soon! - Davey",
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ const traineesTransparent = [
     favoriteFood: "Dried Mangoes",
     favoriteArtist: "XG, Stray Kids, ATEEZ",
     nationality: "Filipino",
+    message:
+      "Aiaaaan! Huhu, you're one of the big heartbreaks during the final eliminations. I still remember how much you took good care of me when I got so sick to the point that I was just curling up and was screaming in pain. My headache was so bad but you were so patient in helping me get better. It meant a lot to me, and I am happy to have met you and for you to become a friend of mine. This is not the end, and I know na we will meet eachother again! Hwaiting alwaaays. <3 - Davey",
   },
   {
     id: 3,
@@ -34,6 +38,8 @@ const traineesTransparent = [
     favoriteFood: "Seafooods",
     favoriteArtist: "Billie Eilish, ENHYPEN",
     nationality: "Filipino (Half Chinese - Half Filipino)",
+    message:
+      "AJ! :<<< You know how much I expected you to be part of the Finals and to even debut in this show. I was genuinely surprised that you went home. :<< I know how determined you are to get to this stage. The world knows what a great performer you are. Please keep the light burning AJ. I know you will always shine brighter with how passionate you are. Absolutely no regrets pushing you to join this program. Hwaiting alwaysssss, see you soonest. <3 - Davey",
   },
   {
     id: 4,
@@ -47,6 +53,8 @@ const traineesTransparent = [
     favoriteArtist: "EXO Chen, 10cm 십센치",
     nationality: "Filipino",
     tmi: ["I can sleep anywhere at any second."],
+    message:
+      "Alex! Kahibalo gyud ka na bisan lahi ta ug friend group, magkasinabot ra gyud ta dayon once mag-sturyahanay ta sa usa't-usa. Kahibalo ko na pangandoy usab gyud ni nimo na mag-idol. Talented gyud ka, kahibalo ka ana. Maayo unta ug ipadayun nimo ang nasugdan na. Magkita ra pud ta usab Alex puhoooon. Hwaiting lang sige aaah! See you soonest. <3 - Davey",
   },
   {
     id: 5,
@@ -59,6 +67,8 @@ const traineesTransparent = [
     favoriteFood: "STEAK!!!",
     favoriteArtist: "Keshi, LE SSERAFIM",
     nationality: "Filipino",
+    message:
+      "Allllyy!! BBOOM BBOOOM! Alam moooo, masaya ako na I was able to perform with you before we parted waaays. Unforgotteble sa akin ang usapan natin during that one breakfast pagkatapos natin mag-recordiiing, haha. Doon ko kayo mas nakilala, at kung ano ang mga ginagawa nyo bago kayo pumasok dito sa shoow. I hope you're doing great now and you'll be able to reach your goaals. Hwaiting rin always Allyyy! <3 - Davey",
   },
   {
     id: 6,

@@ -156,8 +156,19 @@ const Navbar = () => {
               >
                 Trainees List
               </a>
-              <span className="ml-2 bg-red-500 text-white text-xs px-2 py-1 rounded-[2px] text-center ">
+              {/* <span className="ml-2 bg-red-500 text-white text-xs px-2 py-1 rounded-[2px] text-center ">
                 Updated
+              </span> */}
+            </div>
+            <div className="flex justify-center">
+              <a
+                href="/messages"
+                className="block text-center hover:text-gray-300"
+              >
+                Message
+              </a>
+              <span className="ml-2 bg-red-500 text-white text-xs px-2 py-1 rounded-[2px] text-center ">
+                New
               </span>
             </div>
             {/* <div className="flex justify-center">
