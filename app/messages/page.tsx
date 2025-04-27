@@ -58,8 +58,7 @@ export default function StoryPage() {
             left behind aches and sorrow. <br />
             <em>"Debut together."</em> <br /> <em>"Make everyone proud."</em>
             <br />
-            <em>"Trust the journey."</em> <br />
-            <em>"I'll make it to the top."</em>
+            <em>"Trust the journey."</em>
           </p>
 
           <img
