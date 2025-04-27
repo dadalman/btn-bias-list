@@ -162,7 +162,7 @@ const Navbar = () => {
             </div>
             <div className="flex justify-center">
               <a
-                href="/messages"
+                href="/messages/01"
                 className="block text-center hover:text-gray-300"
               >
                 Message
