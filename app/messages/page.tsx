@@ -84,7 +84,11 @@ export default function StoryPage() {
 
           <p className="font-inter text-[16px] md:text-[18px] text-[#F4FAFE] mb-6">
             Somewhere between the rushing engines and heavy hearts, they all
-            wondered the same thing: <em>"Is this really the end?"</em>
+            wondered the same thing:
+          </p>
+
+          <p className="font-inter text-[16px] md:text-[18px] text-[#F4FAFE] mb-6">
+            <em>"Is this really the end?"</em>
           </p>
 
           <p className="font-inter text-[16px] md:text-[18px] text-[#F4FAFE] mb-6">
