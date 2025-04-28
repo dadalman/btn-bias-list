@@ -14,6 +14,7 @@ interface Trainee {
   favoriteArtist: string;
   nationality: string;
   tmi: string[];
+  status?: string; // <-- Added status
 }
 
 // Mapping of country codes to full country names
@@ -50,6 +51,14 @@ const TraineeModal: React.FC<{
   const countryCode = trainee.country.toUpperCase();
   const countryName = countryNameMap[countryCode] || "Unknown Country";
 
+  // Determine display status
+  const displayStatus =
+    trainee.status === "mission 1"
+      ? "Mission 1"
+      : trainee.status === "mission 2" || trainee.status === "finalist"
+      ? "Mission 2"
+      : null;
+
   // Handle clicking outside the modal content
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
@@ -82,6 +91,11 @@ const TraineeModal: React.FC<{
         <p className="text-md mb-2">
           {getCountryFlagEmoji(countryCode)} {countryName}
         </p>
+        {displayStatus && (
+          <div className="bg-[#92D0F3] text-[#01274F] font-bold py-2 px-4  inline-block mb-3">
+            {displayStatus}
+          </div>
+        )}
         <hr className="border-[#F4FAFE] my-4" />
 
         {/* Dreamers Info */}
@@ -107,6 +121,7 @@ const TraineeModal: React.FC<{
         <p>
           🗺 <b>Nationality:</b> {trainee.nationality}
         </p>
+
         {/* TMI Section */}
         {trainee.tmi && trainee.tmi.length > 0 && (
           <div className="mt-4 text-center">

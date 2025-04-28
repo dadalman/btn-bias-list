@@ -12,6 +12,7 @@ const traineesTransparent = [
     nationality: "",
     message:
       "Hi Adi! We were together sa auditions at sa signing dito sa loob ng shoow. No eme, you are one of the people na I truly believe has the potential to make it big sa industry. I know na you faced a lot of challenges here, especially with being in a team, but I know na it's not just me who saw how much you've improved. Not just as an artist, but as a person also. Hwaiting always Adi! I hope to see you shine on stage soon! - Davey",
+    status: "mission 2",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const traineesTransparent = [
     nationality: "Filipino",
     message:
       "Aiaaaan! Huhu, you're one of the big heartbreaks during the final eliminations. I still remember how much you took good care of me when I got so sick to the point that I was just curling up and was screaming in pain. My headache was so bad but you were so patient in helping me get better. It meant a lot to me, and I am happy to have met you and for you to become a friend of mine. This is not the end, and I know na we will meet eachother again! Hwaiting alwaaays. <3 - Davey",
+    status: "mission 2",
   },
   {
     id: 3,
@@ -40,7 +42,9 @@ const traineesTransparent = [
     nationality: "Filipino (Half Chinese - Half Filipino)",
     message:
       "AJ! :<<< You know how much I expected you to be part of the Finals and to even debut in this show. I was genuinely surprised that you went home. :<< I know how determined you are to get to this stage. The world knows what a great performer you are. Please keep the light burning AJ. I know you will always shine brighter with how passionate you are. Absolutely no regrets pushing you to join this program. Hwaiting alwaysssss, see you soonest. <3 - Davey",
+    status: "mission 2",
   },
+
   {
     id: 4,
     name: "ALEX",
@@ -55,6 +59,7 @@ const traineesTransparent = [
     tmi: ["I can sleep anywhere at any second."],
     message:
       "Alex! Kahibalo gyud ka na bisan lahi ta ug friend group, magkasinabot ra gyud ta dayon once mag-sturyahanay ta sa usa't-usa. Kahibalo ko na pangandoy usab gyud ni nimo na mag-idol. Talented gyud ka, kahibalo ka ana. Maayo unta ug ipadayun nimo ang nasugdan na. Magkita ra pud ta usab Alex puhoooon. Hwaiting lang sige aaah! See you soonest. <3 - Davey",
+    status: "mission 1",
   },
   {
     id: 5,
@@ -69,6 +74,7 @@ const traineesTransparent = [
     nationality: "Filipino",
     message:
       "Allllyy!! BBOOM BBOOOM! Alam moooo, masaya ako na I was able to perform with you before we parted waaays. Unforgotteble sa akin ang usapan natin during that one breakfast pagkatapos natin mag-recordiiing, haha. Doon ko kayo mas nakilala, at kung ano ang mga ginagawa nyo bago kayo pumasok dito sa shoow. I hope you're doing great now and you'll be able to reach your goaals. Hwaiting rin always Allyyy! <3 - Davey",
+    status: "mission 2",
   },
   {
     id: 6,
@@ -87,6 +93,7 @@ const traineesTransparent = [
       "I baked and sold cookies online before becoming a trainee",
       "I don’t like cooked fish",
     ],
+    status: "mission 2",
   },
   {
     id: 7,
@@ -99,6 +106,7 @@ const traineesTransparent = [
     favoriteFood: "Pork Steak",
     favoriteArtist: "JUNNY 주니, Sabrina Carpenter",
     nationality: "Filipino (Half Mermaid - Half Fairy)",
+    status: "mission 1",
   },
   {
     id: 8,
@@ -111,6 +119,7 @@ const traineesTransparent = [
     favoriteFood: "Steak, Burger, Chicken Wings",
     favoriteArtist: "Taylor Swift, Girls' Generation/SNSD 소녀시대",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 9,
@@ -123,6 +132,7 @@ const traineesTransparent = [
     favoriteFood: "Tinolang Manok",
     favoriteArtist: "Colde, Zico 지코, Conan Gray, The 1975, SCRUBB",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 10,
@@ -135,6 +145,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "ENHYPEN",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 11,
@@ -147,6 +158,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 12,
@@ -159,6 +171,7 @@ const traineesTransparent = [
     favoriteFood: "Chicken BBQ",
     favoriteArtist: "ATEEZ (Mingi and San), Stray Kids (Hyunjin)",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 13,
@@ -181,6 +194,7 @@ const traineesTransparent = [
       "I formerly joined a pop idol survival show, Top Class: Rise to P-pop Stardom.",
       ,
     ],
+    status: "finalist",
   },
   {
     id: 14,
@@ -193,6 +207,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 15,
@@ -205,6 +220,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "voluntary exit",
   },
   {
     id: 16,
@@ -217,6 +233,7 @@ const traineesTransparent = [
     favoriteFood: "Tocino",
     favoriteArtist: "Justin Bieber",
     nationality: "Filipino",
+    status: "finalist",
   },
   {
     id: 17,
@@ -229,6 +246,7 @@ const traineesTransparent = [
     favoriteFood: "Filet Mignon, Fried Chicken, BBQ Beef Ribs",
     favoriteArtist: "Doja Cat",
     nationality: "Filipino (Half Chinese - Half Garter)",
+    status: "mission 1",
   },
   {
     id: 18,
@@ -241,6 +259,7 @@ const traineesTransparent = [
     favoriteFood: "Chocolate",
     favoriteArtist: "Hoshi (SVT 세븐틴) ",
     nationality: "Filipino",
+    status: "finalist",
   },
   {
     id: 19,
@@ -253,6 +272,7 @@ const traineesTransparent = [
     favoriteFood: "EVERYTHING, ANYTHIIING",
     favoriteArtist: "Bruno Mars, Ariana Grande, TWICE",
     nationality: "Filipino (1/4 Chinese, 1/8 Spanish)",
+    status: "finalist",
   },
   {
     id: 20,
@@ -270,6 +290,7 @@ const traineesTransparent = [
       "Gamer (Cookierun: Kingdom, Dead by Daylight, Apex Legends)",
       "Loves the ocean and everything related to it.",
     ],
+    status: "mission 1",
   },
   {
     id: 21,
@@ -282,6 +303,7 @@ const traineesTransparent = [
     favoriteFood: "Ice Cream (Cookies & Cream)",
     favoriteArtist: "BINI",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 22,
@@ -294,6 +316,7 @@ const traineesTransparent = [
     favoriteFood: "Humba (Filipino braised pork dish)",
     favoriteArtist: "ZEROBASEONE",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 23,
@@ -306,6 +329,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 2",
   },
   {
     id: 24,
@@ -318,6 +342,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 25,
@@ -330,6 +355,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 26,
@@ -342,6 +368,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 27,
@@ -354,6 +381,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 28,
@@ -366,6 +394,7 @@ const traineesTransparent = [
     favoriteFood: "Anything pastaaaaaa",
     favoriteArtist: "Chase Atlantic",
     nationality: "Filipino",
+    status: "finalist",
   },
   {
     id: 29,
@@ -378,6 +407,7 @@ const traineesTransparent = [
     favoriteFood: "Siomai",
     favoriteArtist: "Ariana Grande",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 30,
@@ -390,6 +420,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 2",
   },
   {
     id: 31,
@@ -402,6 +433,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 32,
@@ -414,6 +446,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 33,
@@ -426,6 +459,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 34,
@@ -444,6 +478,7 @@ const traineesTransparent = [
       "I have 8 cats.",
       "I'm a bookworm.",
     ],
+    status: "mission 1",
   },
   {
     id: 35,
@@ -457,6 +492,7 @@ const traineesTransparent = [
     favoriteArtist:
       "ZEROBASEONE, UNIS, IZNA, Wave to Earth, NewJeans, ENHYPEN, CSR 첫사랑 (Cheotsarang), BINI, Katseye",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 36,
@@ -469,6 +505,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 37,
@@ -481,6 +518,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 38,
@@ -498,6 +536,7 @@ const traineesTransparent = [
       "I've met ZEROBASEONE.",
       "I've been a hardcore bubble tea barista for 3 years.",
     ],
+    status: "mission 2",
   },
   {
     id: 39,
@@ -510,6 +549,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 40,
@@ -522,6 +562,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 2",
   },
   {
     id: 41,
@@ -540,6 +581,7 @@ const traineesTransparent = [
       "K.O. danced Hard Carry for Dream Stage with BAMBAM, Youngjae (GOT7) x TNX on KCON 2023 Thailand.",
       "K.O. was a dancer in YOU BETTER LOVE ME CONCERT (Violette Wautier) and ZeeNunew 1st Concert.",
     ],
+    status: "mission 1",
   },
   {
     id: 42,
@@ -552,6 +594,7 @@ const traineesTransparent = [
     favoriteFood: "Chips",
     favoriteArtist: "Ariana Grande",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 43,
@@ -564,6 +607,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "NewJeans, TWS",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 44,
@@ -591,6 +635,7 @@ const traineesTransparent = [
       "Kylex loves to go to the gym and do home work outs",
       "Kylex used to play Valorant (Online first-person shooter game) professionally and has already represented Philippines against other countries in some Valorant tournaments.",
     ],
+    status: "finalist",
   },
   {
     id: 45,
@@ -603,6 +648,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 46,
@@ -615,6 +661,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 47,
@@ -627,6 +674,7 @@ const traineesTransparent = [
     favoriteFood: "Sinigang",
     favoriteArtist: "SB19, BTS, Felip (SB19)",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 48,
@@ -639,6 +687,7 @@ const traineesTransparent = [
     favoriteFood: "Boba",
     favoriteArtist: "IVE, aespa, Keshi",
     nationality: "American, Thai",
+    status: "mission 2",
   },
   {
     id: 49,
@@ -651,6 +700,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 50,
@@ -664,6 +714,7 @@ const traineesTransparent = [
     favoriteArtist:
       "LOONA 이달의 소녀, BINI, Alamat, Adele, NIKI, Troye Sivan, Clara Benin, Reese Lansangan",
     nationality: "Filipino (1/8 Chinese)",
+    status: "mission 1",
   },
   {
     id: 51,
@@ -680,6 +731,7 @@ const traineesTransparent = [
       "I love sleeping, eating, and playing games.",
       "I love memorizing choreographies",
     ],
+    status: "mission 1",
   },
   {
     id: 52,
@@ -692,6 +744,7 @@ const traineesTransparent = [
     favoriteFood: "Padthai",
     favoriteArtist: "NCT DREAM",
     nationality: "Thai",
+    status: "mission 1",
   },
   {
     id: 53,
@@ -704,6 +757,7 @@ const traineesTransparent = [
     favoriteFood: "Sinigang, Sopas",
     favoriteArtist: "GFriend & Dreamcatcher",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 54,
@@ -717,6 +771,7 @@ const traineesTransparent = [
     favoriteArtist: "Treasure",
     nationality: "Thai",
     tmi: ["I love Coriander (ผักชี)"],
+    status: "mission 2",
   },
   {
     id: 55,
@@ -729,6 +784,7 @@ const traineesTransparent = [
     favoriteFood: "Chicken Adobo, Chicken Curry",
     favoriteArtist: "UNIS, Illit, Olivia Rodrigo",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 56,
@@ -741,6 +797,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 57,
@@ -753,6 +810,7 @@ const traineesTransparent = [
     favoriteFood: "Fries",
     favoriteArtist: "SZA, Ariana Grande, Troye Sivan",
     nationality: "Filipino",
+    status: "finalist",
   },
   {
     id: 58,
@@ -765,6 +823,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 2",
   },
   {
     id: 59,
@@ -777,6 +836,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 2",
   },
   {
     id: 60,
@@ -789,6 +849,7 @@ const traineesTransparent = [
     favoriteFood: "Seafoods",
     favoriteArtist: "Morisette Amon, HORI7ON, Ariana Grande",
     nationality: "Filino",
+    status: "mission 1",
   },
   {
     id: 61,
@@ -801,6 +862,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "voluntary exit",
   },
   {
     id: 62,
@@ -813,6 +875,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 63,
@@ -826,6 +889,7 @@ const traineesTransparent = [
     favoriteArtist: "Iz*One, Triple-S, Treasure",
     nationality: "Myanmar, Chinese",
     tmi: ["I love swimming, eating, cooking! IT IS MY FAVORITE"],
+    status: "finalist",
   },
   {
     id: 64,
@@ -838,6 +902,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 65,
@@ -850,6 +915,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 66,
@@ -862,6 +928,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 67,
@@ -874,6 +941,7 @@ const traineesTransparent = [
     favoriteFood: "Ice Cream",
     favoriteArtist: "Iz*One, SZA, EXO, ZB1",
     nationality: "Filipino",
+    status: "mission 2",
   },
   {
     id: 68,
@@ -886,6 +954,7 @@ const traineesTransparent = [
     favoriteFood: "Fried Chicken",
     favoriteArtist: "Sarah G, BTS, TWICE",
     nationality: "Filipino",
+    status: "mission 1",
   },
   {
     id: 69,
@@ -905,6 +974,7 @@ const traineesTransparent = [
       "Ive written more than 100 Songs waiting to be released",
       "I AM LITERALLY PIKACHU",
     ],
+    status: "mission 2",
   },
   {
     id: 70,
@@ -917,6 +987,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "mission 1",
   },
   {
     id: 71,
@@ -929,6 +1000,7 @@ const traineesTransparent = [
     favoriteFood: "Burger, Delight (Drink), SB19",
     favoriteArtist: "TJ Monterde",
     nationality: "Filipino, Chinese",
+    status: "finalist",
   },
   {
     id: 72,
@@ -941,6 +1013,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 73,
@@ -953,6 +1026,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
+    status: "finalist",
   },
   {
     id: 74,
@@ -965,6 +1039,7 @@ const traineesTransparent = [
     favoriteFood: "Fench Fries 🍟",
     favoriteArtist: "ATEEZ (에이티즈)",
     nationality: "Filipino",
+    status: "finalist",
   },
   {
     id: 75,
@@ -984,6 +1059,7 @@ const traineesTransparent = [
       `Composes and writes his own songs and hopes that he can perform them in a group. He has written "My Astrophile" and "Promise"`,
       "Loves astrology and anything related to the stars, space, and the universe.",
     ],
+    status: "finalist",
   },
 ];
 
