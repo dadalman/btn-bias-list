@@ -62,11 +62,11 @@ export default function TraineesList() {
                 <div
                   key={trainee.id}
                   onClick={() => handleTraineeClick(trainee)}
-                  className="cursor-pointer"
+                  className="cursor-pointer w-15"
                 >
                   <TraineesProfile
                     name={trainee.name}
-                    image={trainee.image}
+                    image={trainee.image} 
                     country={trainee.country}
                   />
                 </div>

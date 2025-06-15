@@ -19,10 +19,10 @@ const SelectionModal: React.FC<ModalProps> = ({ isOpen, onClose, rank }) => {
 
   // Filter trainees: Only those who are finalists + match search input
   const filteredTrainees = traineesTransparent
-    .filter(
-      (trainee) =>
-        trainee.status === "finalist" || trainee.status === "mission 2"
-    )
+    // .filter(
+    //   (trainee) =>
+    //     trainee.status === "finalist" || trainee.status === "mission 2"
+    // )
     .filter((trainee) =>
       trainee.name.toLowerCase().includes(search.toLowerCase())
     );

@@ -233,7 +233,7 @@ const traineesTransparent = [
     favoriteFood: "Tocino",
     favoriteArtist: "Justin Bieber",
     nationality: "Filipino",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 17,
@@ -259,7 +259,7 @@ const traineesTransparent = [
     favoriteFood: "Chocolate",
     favoriteArtist: "Hoshi (SVT 세븐틴) ",
     nationality: "Filipino",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 19,
@@ -272,7 +272,7 @@ const traineesTransparent = [
     favoriteFood: "EVERYTHING, ANYTHIIING",
     favoriteArtist: "Bruno Mars, Ariana Grande, TWICE",
     nationality: "Filipino (1/4 Chinese, 1/8 Spanish)",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 20,
@@ -381,7 +381,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 28,
@@ -889,7 +889,7 @@ const traineesTransparent = [
     favoriteArtist: "Iz*One, Triple-S, Treasure",
     nationality: "Myanmar, Chinese",
     tmi: ["I love swimming, eating, cooking! IT IS MY FAVORITE"],
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 64,
@@ -915,7 +915,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 66,
@@ -1013,7 +1013,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 73,
@@ -1026,7 +1026,7 @@ const traineesTransparent = [
     favoriteFood: "",
     favoriteArtist: "",
     nationality: "",
-    status: "finalist",
+    status: "debut",
   },
   {
     id: 74,
@@ -1059,7 +1059,7 @@ const traineesTransparent = [
       `Composes and writes his own songs and hopes that he can perform them in a group. He has written "My Astrophile" and "Promise"`,
       "Loves astrology and anything related to the stars, space, and the universe.",
     ],
-    status: "finalist",
+    status: "debut",
   },
 ];
 

@@ -55,8 +55,12 @@ const TraineeModal: React.FC<{
   const displayStatus =
     trainee.status === "mission 1"
       ? "Mission 1"
-      : trainee.status === "mission 2" || trainee.status === "finalist"
+      : trainee.status === "mission 2"
       ? "Mission 2"
+      : trainee.status === "finalist"
+      ? "Finalist"
+      : trainee.status === "debut"
+      ? "Debut Member"
       : null;
 
   // Handle clicking outside the modal content
