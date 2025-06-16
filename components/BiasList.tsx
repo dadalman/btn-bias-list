@@ -42,9 +42,10 @@ const BiasList: React.FC<BiasListProps> = ({ downloading }) => {
 
   return (
     <section className="w-full flex flex-col items-center h-auto">
-      <div className="w-full sm:w-[556px] md:w-[556px] lg:w-full flex flex-wrap justify-center gap-4 md:gap-3 lg:gap-10">
+      {/* Optimized grid for Instagram story format */}
+      <div className="w-full grid grid-cols-3 gap-2 justify-items-center">
         {biasList.map((bias) => (
-          <div key={bias.id}>
+          <div key={bias.id} className="w-full flex justify-center">
             <TopRankFrame
               name={bias.name}
               rank={bias.rank}
